@@ -1,5 +1,8 @@
 # Vue Geo Heat Maps
 
+[Official Github](https://github.com/aleem-ahmed/vue-geo-heat-maps)
+
+Forked from [ghrehh's](https://www.npmjs.com/~ghrehh) package [vue-world-map](https://www.npmjs.com/package/vue-world-map)
 A Vue JS Component for displaying dynamic data on a world map.
 
 Map from [amCharts](https://www.amcharts.com/svg-maps/?map=world)
@@ -24,7 +27,7 @@ object formatted like so.
 }
 ```
 
-For Individual Countries pass the ISO 3166 Code to the `map` prop.
+For Individual Countries pass the ISO 3166 Code to the `map` prop. If nothing is passed the default is "world".
 
 ```
 map="US"
@@ -45,6 +48,26 @@ note: Only US country map is available. Other countries are coming soon..
 Where the key is a country's
 [ISO 3166 Code](https://en.wikipedia.org/wiki/ISO_3166) and the value is a
 numerical value associated with it.
+
+## Example
+```
+<template>
+  <Map
+    :countryData="{ US: 300, CA: 400 }"
+  />
+
+  <Map
+    map="US"
+    :countryData="{ US_CA: 300, US_NJ: 400 }"
+  />
+</template>
+
+<script>
+  import map from 'vue-geo-heat-maps'
+  .
+  .
+  .
+``` 
 
 ## API
 
