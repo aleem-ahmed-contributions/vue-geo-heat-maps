@@ -52,14 +52,16 @@ numerical value associated with it.
 ## Example
 ```
 <template>
-  <Map
-    :countryData="{ US: 300, CA: 400 }"
-  />
+  <div>
+    <Map
+      :countryData="{ US: 300, CA: 400 }"
+    />
 
-  <Map
-    map="US"
-    :countryData="{ US_CA: 300, US_NJ: 400 }"
-  />
+    <Map
+      map="US"
+      :countryData="{ US_CA: 300, US_NJ: 400 }"
+    />
+  </div>
 </template>
 
 <script>

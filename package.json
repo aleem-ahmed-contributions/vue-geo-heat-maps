@@ -1,6 +1,6 @@
 {
   "name": "vue-geo-heat-maps",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Fork of vue-world-map",
   "main": "src/App.vue",
   "scripts": {
